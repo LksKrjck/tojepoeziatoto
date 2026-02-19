@@ -1,0 +1,156 @@
+:root {
+    --main-color1: #83C27D;
+    --main-color2: hwb(171 10% 20%);
+    --main-color3:  hsla(143, 4%, 36%, 0.545);
+    --text-color: hsl(200, 100%, 0%);
+}
+
+.night {
+    --main-color1: #000000;
+    --main-color2: #0C3D0B;
+    --main-color3: #3F454F;
+    --text-color: hsl(0, 0%, 100%);
+}
+
+html, body {
+    background: linear-gradient(
+        135deg, var(--main-color1), var(--main-color2)
+    );
+    background-attachment: fixed;
+    color: var(--text-color);
+
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    position: fixed;
+    left: 0px;
+    width: 15vw;
+    height: 100vh;
+    padding-top: 30px;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+}
+
+p {
+    line-height: 1.2em;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.nav-link:hover {
+    color: crimson;
+    transform: scale(1.1);
+    
+}
+
+.nav-link:active {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.hlavna-sekcia {
+    margin-left: 17vw;
+    width: 60vw;
+}
+
+.basen {
+    background: var(--main-color1);
+    box-shadow: 5px 5px 7px 5px var(--main-color3);
+    padding: 25px;
+    margin: 25px;
+}
+
+.dlha {
+    columns: 2;
+}
+
+.schovate {
+    display: none;
+}
+
+.download-button {
+    display: inline-block;
+    width: 30vw;
+    height: 60px;
+    margin: 20px;
+    padding: 4px;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    background: lightgrey;
+    box-shadow: 5px 5px 7px 5px var(--main-color3);
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 10vh;
+    text-decoration: none; 
+    transition: 0.2s ease;
+}
+
+.download-button:hover {
+    color: crimson;
+    transform: translateY(-3px);
+}
+
+.download-button:active {
+    box-shadow: 1px 1px 7px 5px var(--main-color3);
+    transform: translateY(1px);
+}
+
+.tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div[class="tab"] p {
+    grid-column: span 2;
+    font-size: 1.5em;
+    text-shadow: 1.5px 1.5px 2px var(--main-color3);
+}
+
+.playback {
+    display: inline-block;
+    background: lightgrey;
+    border: none;
+    width: 5vw;
+    height: 55px;
+    margin: 25px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 7px 5px var(--main-color3);
+    font-size: 2em;
+    transition: 0.2s ease;
+}
+
+.playback:hover {
+    color: crimson;
+    transform: translateY(-3px);
+}
+
+.playback:active {
+    box-shadow: 1px 1px 7px 5px var(--main-color3);
+    transform: translateY(1px);
+}
+
+
+#night {
+    position: fixed;
+    font-size: 2em; 
+    right: 2vw;
+    top: 2vh;
+    background: white;
+    border: none;
+    border-radius: 12px;
+    padding: auto;
+    
+}
+
