@@ -18,17 +18,22 @@ html, body {
     );
     background-attachment: fixed;
     color: var(--text-color);
-
     font-family: sans-serif;
+}
+
+main {
+    margin-left: 17vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav {
     position: fixed;
     left: 0px;
     width: 15vw;
-    height: 100vh;
+    top: 0;
+    bottom: 0;
     padding-top: 30px;
     overflow-y: auto;
     backdrop-filter: blur(10px);
@@ -60,8 +65,14 @@ p {
 }
 
 .hlavna-sekcia {
-    margin-left: 17vw;
-    width: 60vw;
+    width: 85%;
+}
+
+.bez-navigacie {
+    display: grid;
+    justify-content: center;
+    align-items: space-around;
+    width: 100%;
 }
 
 .basen {
@@ -80,7 +91,6 @@ p {
 }
 
 .download-button {
-    display: inline-block;
     width: 30vw;
     height: 60px;
     margin: 20px;
@@ -92,7 +102,9 @@ p {
     box-shadow: 5px 5px 7px 5px var(--main-color3);
     font-size: 1.1em;
     text-align: center;
-    line-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none; 
     transition: 0.2s ease;
 }
@@ -116,6 +128,7 @@ div[class="tab"] p {
     grid-column: span 2;
     font-size: 1.5em;
     text-shadow: 1.5px 1.5px 2px var(--main-color3);
+    margin-left: 20%;
 }
 
 .playback {
@@ -150,7 +163,47 @@ div[class="tab"] p {
     background: white;
     border: none;
     border-radius: 12px;
-    padding: auto;
+    padding: 10px;
     
 }
 
+@media screen and (max-width:768px) {
+
+main {
+    margin-left: 30vw;
+}
+
+nav {
+    width: 30vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+p {
+    line-height: 1em;
+}
+
+.hlavna-sekcia {
+    margin-left: 30vw;
+    width: 90%;
+}
+
+.basen {
+    margin: 0px;
+}
+
+.dlha {
+    columns: 1;
+}
+
+.download-button {
+    width: 90%;
+}
+
+
+.playback {
+    box-sizing: content-box;
+    
+}
+
+}
