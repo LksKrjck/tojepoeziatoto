@@ -66,6 +66,11 @@ p {
 
 .hlavna-sekcia {
     width: 85%;
+    margin-top: 5vh;
+    margin-right: 5vw;
+    background: var(--main-color1);
+    box-shadow: 5px 5px 7px 5px var(--main-color3);
+    padding: 25px;
 }
 
 .bez-navigacie {
@@ -76,10 +81,9 @@ p {
 }
 
 .basen {
-    background: var(--main-color1);
-    box-shadow: 5px 5px 7px 5px var(--main-color3);
-    padding: 25px;
-    margin: 25px;
+    top: 200px;
+    margin: auto;
+    
 }
 
 .dlha {
@@ -167,28 +171,43 @@ div[class="tab"] p {
     
 }
 
+#menu {
+    display: none;
+}
+
 @media screen and (max-width:768px) {
 
 main {
-    margin-left: 30vw;
+    margin: auto;
 }
 
 nav {
+    top: 0;
+    left: -100%;
     width: 30vw;
     padding-top: 30px;
     padding-bottom: 30px;
+    transition: all 0.2 ease;
 }
 
 p {
     line-height: 1em;
 }
 
+.active {
+    left: 0;
+}
+
 .hlavna-sekcia {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
     width: 90%;
 }
 
 .basen {
-    margin: 0px;
+    line-height: 1.2em;
+    margin: 10px;
 }
 
 .dlha {
@@ -203,6 +222,18 @@ p {
 .playback {
     box-sizing: content-box;
     
+}
+
+#menu {
+    display: inline;
+    position: fixed;
+    font-size: 2.1em; 
+    right: 80px;
+    top: 2vh;
+    background: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
 }
 
 }

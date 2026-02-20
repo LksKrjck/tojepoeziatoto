@@ -28,6 +28,15 @@ let randomPoem = Math.floor(Math.random() * basne.length);
 basne[randomPoem].classList.remove("schovate");
 })
 
+// zobrazenie menu 
+
+const menuButton = document.querySelector("#menu");
+const navBar = document.querySelector("nav");
+
+menuButton.addEventListener("click", () => {
+    navBar.classList.toggle("active");
+})
+
 // nočný režím
 
 const nightModeButton = document.querySelector("#night");
