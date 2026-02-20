@@ -202,14 +202,14 @@ h1 {
 
 .hlavna-sekcia {
     margin-top: 80px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
     width: 90%;
 }
 
 .basen {
     line-height: 1.5em;
-    margin: 10px;
+    margin: 0;
 }
 
 .dlha {
