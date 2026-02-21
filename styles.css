@@ -139,7 +139,7 @@ div[class="tab"] p {
     display: inline-block;
     background: lightgrey;
     border: none;
-    width: 5vw;
+    width: 55px;
     height: 55px;
     margin: 25px;
     border-radius: 12px;
@@ -199,6 +199,19 @@ h1 {
 .active {
     left: 0;
 }
+
+.bez-navigacie {
+    display: grid;
+    justify-content: center;
+    align-items: space-around;
+    width: 100%;
+    margin: auto;
+}
+
+.bez-navigacie h1 {
+    text-align: center;
+}
+
 
 .hlavna-sekcia {
     margin-top: 80px;

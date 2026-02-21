@@ -24,18 +24,20 @@ odkazy.forEach(odkaz => {
 // zobrazenie náhodnej básničky na novej stránke
 
 let randomPoem = Math.floor(Math.random() * basne.length);
-
+if (basne.length > 0) {
 basne[randomPoem].classList.remove("schovate");
-})
+}
+
 
 // zobrazenie menu 
 
 const menuButton = document.querySelector("#menu");
 const navBar = document.querySelector("nav");
 
+if (menuButton) {
 menuButton.addEventListener("click", () => {
     navBar.classList.toggle("active");
-})
+})}
 
 // nočný režím
 
@@ -70,4 +72,4 @@ playButtons.forEach(button => {button.addEventListener("click", function() {
 
           currentAudio = new Audio (preview);
           currentAudio.play();
-})})
+})})})
