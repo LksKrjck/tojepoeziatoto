@@ -37,6 +37,7 @@ nav {
     padding-top: 30px;
     overflow-y: auto;
     backdrop-filter: blur(10px);
+    z-index: 100;
 }
 
 p {
@@ -143,7 +144,7 @@ a {
     padding: 10px;
     box-sizing: border-box;
 
-    z-index: 1000;
+    z-index: 50;
 
 }
 
@@ -242,6 +243,7 @@ nav {
     padding-top: 30px;
     padding-bottom: 30px;
     transition: all 0.2s ease;
+    z-index: 100;
 }
 
 h1 {
