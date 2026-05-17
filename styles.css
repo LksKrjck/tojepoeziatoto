@@ -48,6 +48,23 @@ a {
     text-decoration: none;
 }
 
+h5 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+h6 {
+    font-size: 1rem;
+    margin-bottom: 7px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
 .nav-link {
     color: var(--text-color);
     text-decoration: none;
@@ -70,6 +87,7 @@ a {
 }
 
 .hlavna-sekcia {
+     max-width: 1000px;
     width: 85%;
     margin-top: 120px;
     margin-right: 5vw;
@@ -218,6 +236,41 @@ div[class="tab"] p {
     text-decoration: none;
     font-size: 1.5em;
     font-weight: bold;
+}
+
+
+.skladba {
+    background: rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(6px);
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.15);
+
+    transition: 0.2s ease;
+}
+
+.skladba:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 18px rgba(131,194,125,0.25);
+}
+
+
+.album {
+    margin-bottom: 30px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.album summary {
+    padding: 18px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: rgba(0,0,0,0.1);
 }
 
 
